@@ -16,9 +16,22 @@
         <i class="fa-solid fa-temperature-arrow-up"></i>
     </div>
     <div class="f2c-container">
-        <h1>Convert Celsius to Fahrenheit</h1>
-        <p id="result"></p>
-        <button onclick="tempconversion()" class="btn">Click here to tell me the weather</button>
+        <h1>Convert between Celsius and Fahrenheit</h1>
+        <div class="form-container">
+            <div id="thermometer" class="thermometer">
+            </div>
+            <form>
+                <label for="degree-input">What is the weather?</label>
+                <input id="degree-input" required placeholder="70" type="number" min="-273" max="1000">
+                <select id="unitid">
+                    <option value="toCelsius">°F</option>
+                    <option value="toFahrenheit">°C</option>
+                </select>
+            </form>
+            <p id="result"></p>
+
+        </div>
+        <button onclick="tempconversion()" class="btn">Get your conversion!</button>
     </div>
     
 

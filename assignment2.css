@@ -44,3 +44,12 @@
 #result {
     font-size: 2rem;
 }
+
+.thermometer{
+    width: 10px;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 30rem;
+    border-radius: 10px;
+}
