@@ -21,9 +21,11 @@
             <div id="thermometer" class="thermometer">
             </div>
             <form>
-                <label for="degree-input">What is the weather?</label>
-                <input id="degree-input" required placeholder="70" type="number" min="-273" max="1000">
-                <select id="unitid">
+                <label for="degree-input1">What will the starting temperature be today?</label>
+                <input id="degree-input1" required placeholder="70" type="number" min="-273" max="1000">
+                <label for="degree-input2">What will the ending temperature be?</label>
+                <input id="degree-input2" required placeholder="70" type="number" min="-273" max="1000">
+                <select id="unitid2">
                     <option value="toCelsius">°F</option>
                     <option value="toFahrenheit">°C</option>
                 </select>
@@ -31,7 +33,7 @@
             <p id="result"></p>
 
         </div>
-        <button onclick="tempconversion()" class="btn">Get your conversion!</button>
+        <button onclick="tempConversion()" class="btn">Get your conversion!</button>
     </div>
     
 
